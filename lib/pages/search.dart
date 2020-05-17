@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttershare/widgets/header.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -15,6 +16,8 @@ class _SearchState extends State<Search> {
 class UserResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text("User Result");
+    return Scaffold(
+      appBar: header(context, isAppTitle: true),
+    );
   }
 }
